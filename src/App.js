@@ -10,7 +10,7 @@ import Agents from './components/Agents'
 import Services from './components/Services'
 
 function App() {
-  console.log(properties)
+
   return (
     <BrowserRouter>
     <div className="App">

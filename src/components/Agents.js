@@ -4,7 +4,6 @@ import Agent from './Agent'
 
 
 function Agents() {
-  console.log(agents)
   return (
     <div className='agents'>
       <h2>Agents</h2>
