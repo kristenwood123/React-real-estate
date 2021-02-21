@@ -1,12 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { FaHome, FaDollarSign, FaChartLine } from 'react-icons/fa'
+import properties from './properties'
 
 //components
 import Properties from  './components/Properties'
 import Navbar from './components/Navbar'
 
 function App() {
+  console.log(properties)
   return (
     <BrowserRouter>
     <div className="App">
@@ -35,9 +37,9 @@ function App() {
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempore?</p>
                   </div>
                 </section>
-              <Properties />
-
-
+              <Properties 
+                properties={properties}
+              />
            </div>        
     </div>
   </BrowserRouter>

@@ -1,19 +1,16 @@
-import React, {useState} from 'react'
-import properties from '../properties'
+import React from 'react'
+import Property from './Property'
 
-function Properties() {
-  const [index, setIndex] = useState(0)
 
-  const { id, img, price, beds, baths, sqft, address } = properties[index]
-
+function Properties({properties}) {
   return (
     <section className='properties'>
       <div className="properties__container">
         <h2>Properties</h2>
           <div className="properties-slider">
-            <div>
-              <img src={img} alt=""/>
-            </div>
+              {properties.map((property) => {
+                return <Property key={property.id} {...property} />
+              })}            
           </div>
         <button>Previous</button>
         <button>Next</button>
