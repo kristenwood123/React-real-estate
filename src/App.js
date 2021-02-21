@@ -6,14 +6,15 @@ import properties from './properties'
 //components
 import Properties from  './components/Properties'
 import Navbar from './components/Navbar'
+import Agents from './components/Agents'
+import Services from './components/Services'
 
 function App() {
   console.log(properties)
   return (
     <BrowserRouter>
     <div className="App">
-      <Navbar />
-      
+      <Navbar />    
            <h1>Buy and sell real estate properties</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur quod vero amet commodi voluptas facilis corporis ea fuga unde.</p>   
            <div className='App__how-it-works'>
@@ -40,6 +41,8 @@ function App() {
               <Properties 
                 properties={properties}
               />
+              <Agents />
+              <Services />
            </div>        
     </div>
   </BrowserRouter>

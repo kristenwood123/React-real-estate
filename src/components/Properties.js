@@ -15,6 +15,7 @@ function Properties({properties}) {
         <button>Previous</button>
         <button>Next</button>
       </div>
+      <button>View all Property Listings</button>
     </section>
   )
 }
