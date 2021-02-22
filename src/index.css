@@ -91,11 +91,76 @@ a:hover {
 
 .App {
   margin: auto 0;
+  background-color: darkgoldenrod;
 }
 
 .App__header {
   margin: auto;
+  background-color: darkcyan;
   width: 60%;
   text-align: center;
   height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/*HOW IT WORKS*/
+
+.App__how-it-works {
+  background-color: rgb(233, 178, 228);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.App__how-it-works h1 {
+  color: orange;
+}
+
+.how-it-works-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.App__home,
+.App__dollar,
+.App__investing {
+  width: 300px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.App__how-it-works h2 {
+  font-size: 20px;
+}
+
+.App__how-it-works p {
+  color: gray;
+  font-size: 15px;
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: orange;
+}
+
+@media screen and (max-width: 927px) {
+  .App__how-it-works h2 {
+    font-size: 20px;
+  }
+
+  .App__how-it-works p {
+    font-size: 13px;
+    color: gray;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .how-it-works-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }

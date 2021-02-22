@@ -19,30 +19,35 @@ function App() {
     <div className="App">
       <Navbar />
         <div className='App__header'>
+          <div className="App__header-text">
            <h1>Buy and sell real estate properties</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur quod vero amet commodi voluptas facilis corporis ea fuga unde.</p>
-            </div>       
+          </div>
+        </div>       
            <div className='App__how-it-works'>
              <h1>How It Works</h1>
                 <section>
-                <div className='App_home'>
-                  <span><FaHome /></span>
-                  <h2>Find a Property</h2>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempore?</p>
-                </div>
+                  <div className="how-it-works-wrapper">
+                    <div className='App__home'>
+                      <span className='icon'><FaHome /></span>
+                      <h2>Find a Property</h2>
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
 
-                  <div className='App__dollar'>
-                    <span><FaDollarSign /></span>
-                    <h2>Find a Property</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempore?</p>
-                  </div>
+                      <div className='App__dollar'>
+                        <span className='icon'><FaDollarSign /></span>
+                        <h2>Buy a Property</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      </div>
 
-                  <div className='App__investing'>
-                      <span><FaChartLine /></span>
-                    <h2>Find a Property</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tempore?</p>
-                  </div>
+                      <div className='App__investing'>
+                          <span className='icon'><FaChartLine /></span>
+                        <h2>Investing a Property</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      </div>
+                    </div>
                 </section>
+                
               <Properties 
                 properties={properties}
               />
