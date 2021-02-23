@@ -1,7 +1,7 @@
 import React from 'react'
 // import { BrowserRouter } from 'react-router-dom'
+
 import { FaHome, FaDollarSign, FaChartLine } from 'react-icons/fa'
-import properties from './properties'
 import './index.css'
 
 //components
@@ -16,6 +16,7 @@ function App() {
 
   return (
     // <BrowserRouter>
+   
     <div className="App">
       <Navbar />
         <div className='App__header'>
@@ -49,7 +50,6 @@ function App() {
                 </section>
                 
               <Properties 
-                properties={properties}
               />
               <Agents />
               <Services />
@@ -90,7 +90,9 @@ function App() {
            </div> 
           <Footer />       
     </div>
-  // </BrowserRouter>
+    
+  //</BrowserRouter>
+  
   );
 }
 

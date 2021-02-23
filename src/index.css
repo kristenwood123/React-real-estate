@@ -164,3 +164,28 @@ a:hover {
     flex-direction: column;
   }
 }
+
+/* Properties */
+
+.properties {
+  background-color: green;
+  margin-top: 4rem;
+}
+
+.properties__container {
+  background-color: blueviolet;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.properties img {
+  width: 200px;
+}
+
+.properties button {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}

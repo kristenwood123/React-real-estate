@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 function Property({img, price, beds, baths, sqft, address}) {
+  
   return (
     <div className='property'>
       <img src={img} alt='image' />
