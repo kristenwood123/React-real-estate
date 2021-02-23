@@ -18,13 +18,16 @@ function App() {
     // <BrowserRouter>
    
     <div className="App">
+      <div className="App__hero">
+        <div className="fade"></div>
       <Navbar />
         <div className='App__header'>
           <div className="App__header-text">
            <h1>Buy and sell real estate properties</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non consequuntur quod vero amet commodi voluptas facilis corporis ea fuga unde.</p>
           </div>
-        </div>       
+        </div>     
+      </div>  
            <div className='App__how-it-works'>
              <h1>How It Works</h1>
                 <section>
