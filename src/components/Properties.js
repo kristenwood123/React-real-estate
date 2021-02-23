@@ -1,17 +1,37 @@
 import React, {useState} from 'react'
 import Property from './Property'
 import properties from '../properties'
+// import Carousel from 'react-elastic-carousel'
 
 
 function Properties() {
    const [index, setIndex] = useState(0)
   const {img, price, beds, baths, sqft, address} = properties[index]
-  const handleNext = ()=> {
-    console.log('next')
+
+  const checkNumber = (number) => {
+    if(number > properties.length - 1) {
+      return 0
+    } if (number < 0) {
+      return properties.length - 1
+    }
+
+    return number
+  }
+
+
+  const handleNext = () => {
+    setIndex((index) => {
+      let newIndex = index + 1
+      return checkNumber(newIndex)
+    })
+  
   }
 
   const handlePrev = () => {
-    console.log('previous')
+     setIndex((index) => {
+      let newIndex = index - 1
+      return checkNumber(newIndex)
+    })
   }
 
   return (
@@ -21,9 +41,6 @@ function Properties() {
           <button className='prev-btn' onClick={handlePrev}>PREVIOUS</button><span>/</span>
           <button className='next-btn' onClick={handleNext}>NEXT</button>
           <div className="properties-slider">
-              {/* {properties.map((property) => {
-                return <Property key={property.id} {...property} />
-              })}             */}
               <Property 
                 img={img}
                 price={price}

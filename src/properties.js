@@ -36,7 +36,7 @@ const properties = [
     address:  '480 12th, Unit 14, San Francisco, CA'
   },
     {
-    id: 4,
+    id: 5,
     img: 'https://onclickwebdesign.com/wp-content/uploads/property_1.jpg',
     price: '3,400,000',
     beds: 6,
@@ -45,7 +45,7 @@ const properties = [
     address:  '480 12th, Unit 14, San Francisco, CA'
   },
     {
-    id: 4,
+    id: 6,
     img: 'https://onclickwebdesign.com/wp-content/uploads/property_1.jpg',
     price: '3,400,000',
     beds: 6,

@@ -91,12 +91,10 @@ a:hover {
 
 .App {
   margin: auto 0;
-  background-color: darkgoldenrod;
 }
 
 .App__header {
   margin: auto;
-  background-color: darkcyan;
   width: 60%;
   text-align: center;
   height: 100vh;
@@ -107,7 +105,6 @@ a:hover {
 /*HOW IT WORKS*/
 
 .App__how-it-works {
-  background-color: rgb(233, 178, 228);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -168,12 +165,10 @@ a:hover {
 /* Properties */
 
 .properties {
-  background-color: green;
   margin-top: 4rem;
 }
 
 .properties__container {
-  background-color: blueviolet;
   margin: 0 auto;
   width: 80%;
 }
