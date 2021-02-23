@@ -184,3 +184,28 @@ a:hover {
   margin: 10px;
   cursor: pointer;
 }
+
+/* Agents */
+
+.agents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.agent__heading h2 {
+  color: orange;
+}
+
+.agent__img {
+  width: 300px;
+}
+
+.agent__container {
+  background-color: rgb(245, 245, 245);
+  margin: 10px;
+}
